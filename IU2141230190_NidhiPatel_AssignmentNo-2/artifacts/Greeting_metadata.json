@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getGreeting",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"name": "setGreeting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment 2/q3.sol": "Greeting"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment 2/q3.sol": {
+			"keccak256": "0x2dd10d85f213fedc4c6e51203a0c7201a1c423965057392b21e69bdf536dc9a7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5444f883d441b4dfcc07e133ce4ff95abf3dcf0eea8e446be529dc7c7dc5b05f",
+				"dweb:/ipfs/QmPjGSoNcceTTTEQ9fydBW1Bpgp3LicjjQ2uK5iEqE2Ncc"
+			]
+		}
+	},
+	"version": 1
+}

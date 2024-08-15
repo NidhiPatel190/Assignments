@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment 2/q5.sol": "NameStorage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment 2/q5.sol": {
+			"keccak256": "0xd5002c50e3594827689757e4895ebb1d6c042e9bbcd83189ea84d97b320469c9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e7d96eaaff2e5465162cd26a032607e2237bb6e36ccc542897e6b4e0d4945300",
+				"dweb:/ipfs/QmRQSCQcpvoXhbDaYsNNSwvfyFEiGftQND7tToA6ZRjdNJ"
+			]
+		}
+	},
+	"version": 1
+}

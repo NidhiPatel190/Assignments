@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment 2/q1.sol": "HelloWorld"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment 2/q1.sol": {
+			"keccak256": "0x0b03cd4ac39a21f84bdabfbd3d71ed8133b08fa39463636e7d4293a0693330ee",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f7da08a23df4580732866c4712f46ce77dc3426da5207e018b70a94f9145568",
+				"dweb:/ipfs/QmY4szamPdzSrtZsSoP9867f2NE4ah5hyeJ289C3zi5p5v"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "restrictedFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment 2/q7.sol": "OwnerRestricted"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment 2/q7.sol": {
+			"keccak256": "0xd4c61cea71e447c2cde829ac3ed261ca1fe1bc9e82ddb48143dbc9d8307fe90b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a1a5e0220cda647b82e2fedae624582969f4a122b29f42e6ba4ee9790960a5b8",
+				"dweb:/ipfs/QmXPCuNGdWdqLN5frFEhjKJL4o2cBC18ZoFcM7GnAHJCd8"
+			]
+		}
+	},
+	"version": 1
+}
