@@ -45,11 +45,11 @@ Explanation: It defines an event ActionPerformed that logs the address of the pe
 
 9. Simple Ledger:
 
-Overview: This contract maintains a simple ledger of transactions with basic entries.
-Explanation: It defines a Transaction struct to store transaction details and an array ledger to keep all transactions. The addEntry function adds new transactions, while getEntry retrieves details of a specific transaction by index. This provides a basic ledger functionality for recording and accessing transaction history.
+**Overview:** This contract maintains a simple ledger of transactions with basic entries.
+**Explanation:** It defines a Transaction struct to store transaction details and an array ledger to keep all transactions. The addEntry function adds new transactions, while getEntry retrieves details of a specific transaction by index. This provides a basic ledger functionality for recording and accessing transaction history.
 
 10. Message Storage:
 
-Overview: This contract allows users to store and retrieve a message string.
-Explanation: It includes a private state variable message to hold the message string. The setMessage function updates the message, and the getMessage function retrieves it. This demonstrates basic string storage and retrieval in a smart contract.
+**Overview:** This contract allows users to store and retrieve a message string.
+**Explanation:** It includes a private state variable message to hold the message string. The setMessage function updates the message, and the getMessage function retrieves it. This demonstrates basic string storage and retrieval in a smart contract.
 
