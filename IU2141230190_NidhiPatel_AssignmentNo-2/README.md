@@ -3,31 +3,31 @@ Submitting Date: 16-08-2024
 
 ## RollNo.:- IU2141230190
 
-**1. Hello World Contract:
-**
+1. Hello World Contract:
+   
 **Overview:** This is a basic contract designed to return a static string message, "Hello, World!".
 
 **Explanation:** The contract has a single function, sayHello, that is marked as public and pure, meaning it doesn't modify the contract state and can be called externally. When invoked, it simply returns the string "Hello, World!".
 
-**2. Simple Storage:
-**
+2. Simple Storage:
+
 **Overview:** This contract allows users to store and retrieve a single integer value.
 
 **Explanation:** It contains a private state variable storedValue to keep the integer. The set function updates this value, and the get function retrieves it. This demonstrates basic state management in smart contracts.
 
-**3. Greeting Contract:
-**
+3. Greeting Contract:
+
 **Overview: **This contract allows users to set and get a personalized greeting message.
 
 **Explanation:** It uses a private state variable greetingMessage to store the message. The setGreeting function allows users to update this message, while getGreeting retrieves it. This shows how to handle and store string data.
 
-**4. Simple Counter:
-**
+4. Simple Counter:
+
 **Overview:** This contract maintains a count and allows it to be incremented.
 
 **Explanation:** It uses a private state variable count to keep track of the count. The increment function increases the count by one, and the getCount function returns the current count. This is useful for tracking simple metrics or state changes.
 
-**5. Name Storage:**
+5. Name Storage:
 
 **Overview:** This contract stores and retrieves a user's name based on their address.
 
