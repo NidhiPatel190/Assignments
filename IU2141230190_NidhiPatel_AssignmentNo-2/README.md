@@ -8,7 +8,7 @@ Submitting Date: 16-08-2024
 Overview: This is a basic contract designed to return a static string message, "Hello, World!".
 Explanation: The contract has a single function, sayHello, that is marked as public and pure, meaning it doesn't modify the contract state and can be called externally. When invoked, it simply returns the string "Hello, World!".
 
-2.Simple Storage:
+2. Simple Storage:
 
 Overview: This contract allows users to store and retrieve a single integer value.
 Explanation: It contains a private state variable storedValue to keep the integer. The set function updates this value, and the get function retrieves it. This demonstrates basic state management in smart contracts.
