@@ -1,39 +1,99 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
 
-contract Lottery {
-    address public manager;
-    address[] public players;
+pragma solidity >=0.7.0 <0.9.0;
 
-    constructor() {
+
+
+contract Lottery{
+
+    address public manager; // Manager's address (the one who deploys the contract)
+
+    address payable[] public players; // Array to store addresses of players who enter the lottery
+
+
+
+    // Constructor to initialize the manager as the contract deployer
+
+    constructor(){
+
         manager = msg.sender;
+
     }
 
-    function enter() public payable {
-        require(msg.value >= 0.01 ether, "Minimum amount to enter is 0.01 ETH");
-        players.push(msg.sender);
+
+
+    // Function to check if the caller has already entered the lottery
+
+    function alreadyEntered() view private returns(bool){
+
+        for(uint i=0;i<players.length;i++){
+
+            if(players[i]==msg.sender)
+
+            return true;
+
+        }
+
+        return false;
+
     }
 
-    function random() private view returns (uint) {
-        return uint(keccak256(abi.encodePacked(blockhash(block.number - 1), block.timestamp, players)));
+    
+
+    // Function to allow users to enter the lottery
+
+    function enter() payable public {
+
+        require(msg.sender!=manager,"Manager Cannot Enter");
+
+        require(alreadyEntered() == false,"Player already entered");
+
+        require(msg.value >= 1 ether,"Minimum amount must be payed");
+
+        players.push(payable(msg.sender));
+
     }
 
-    function pickWinner() public restricted {
-        require(players.length > 0, "No players in the lottery");
-        uint index = random() % players.length;
-        address winner = players[index];
-        payable(winner).transfer(address(this).balance);
 
-        // Reset the players array after the lottery
-        delete players;
+
+    // Private function to generate a pseudo-random number
+
+    function random() view private returns(uint){
+
+        return uint(sha256(abi.encodePacked(block.difficulty,block.number,players)));
+
     }
 
-    modifier restricted() {
-        require(msg.sender == manager, "Only the manager can call this function");
-        _;
+      
+
+    // Function for the manager to pick a winner from the players
+
+    function pickWinner() public{
+
+        require(msg.sender == manager,"Only manager can pick the winner");
+
+        uint index = random()%players.length;
+
+        address contractAddress = address(this);
+
+        players[index].transfer(contractAddress.balance);
+
+        players = new address payable[](0);
+
+
+
     }
 
-    function getPlayers() public view returns (address[] memory) {
+
+
+    // Function to get the list of players who entered the lottery
+
+    function getPlayers() view public returns(address payable[] memory){
+
         return players;
+
     }
+
+
+
 }
