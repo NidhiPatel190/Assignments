@@ -26,7 +26,7 @@ Contract Details
 
 □ Variables
 
-address public manager: Stores the address of the manager (deployer).
+- address public manager: Stores the address of the manager (deployer).
 address payable[] public players: Array of addresses representing the players who have entered the lottery.
 Functions
 
