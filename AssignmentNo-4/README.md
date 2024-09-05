@@ -3,7 +3,8 @@
 # Submission Date: 05-09-2024
 
 
-## 1. Finding SHA-256 Hash with Specific Prefix
+## 1. Finding SHA-256 Hash with Specific Prefix 
+[q1.js](q1.js)
 
 **Question**: Give me an input string that outputs a SHA-256 hash that starts with `00000`. How will you do it?
 
@@ -17,7 +18,9 @@
 
 This approach is computationally intensive but ensures that you eventually find a valid input string.
 
+
 ## 2. Input String Starting with Specific Prefix
+[q2.js](q2.js)
 
 **Question**: What if I ask you that the input string should start with `devadnani26`? How would the code change?
 
@@ -30,7 +33,9 @@ This approach is computationally intensive but ensures that you eventually find 
 
 By fixing the starting part of the input string and varying only the appended part, you tailor the brute-force approach to the new requirement.
 
+
 ## 3. Finding a Nonce for a Given Input
+[q3.js](q3.js)
 
 **Question**: What if I ask you to find a nonce for the following input:
 
@@ -49,7 +54,10 @@ The nonce is essentially a value that is varied to alter the hash output. The pr
 2. Iteratively appending different nonce values and hashing the result.
 3. Checking if the hash meets the specified condition (e.g., a certain prefix).
 
+
 ## 4. CryptoZombies Lesson 1
+[q4.png](q4.png) [q4(1).png](q4(1).png)
+
 
 **Question**: Go to [CryptoZombies](https://cryptozombies.io/en/solidity), create an account, complete Lesson 1: Making the Zombie Factory, and share a screenshot.
 
@@ -61,7 +69,9 @@ The nonce is essentially a value that is varied to alter the hash output. The pr
 4. Capture a screenshot of your completion status.
 5. Share the screenshot as required.
 
+
 ## 5. Donation Smart Contract
+[q5.sol](q5.sol)
 
 **Description**: The `DonationContract` is a Solidity smart contract designed for managing donations. It allows users to donate Ether to various recipients and provides several features:
 
